@@ -1,4 +1,3 @@
-# tasks.yaml
 fetch_jira_issues_task:
   description: "Fetch Jira issues based on specified criteria and the user's query {user_query}. Use the Jira API to retrieve the data, ensuring that the results are filtered, prioritized, and structured to provide relevant insights."
   expected_output: "A JSON object containing the fetched Jira issues, organized and prioritized based on {user_query}."
@@ -29,4 +28,4 @@ optimize_jira_sprint_task:
 
 generate_jira_report_task:
   description: "Generate a structured and comprehensive report summarizing Jira issues, dependencies, task assignments, and sprint updates. Ensure the report is tailored to {user_query}, providing actionable insights and recommendations."
-  expected_output: "A Markdown-formatted Jira report containing key issue summaries, dependency analysis, task assignments, and sprint insights, all aligned with {user_query}."
+  expected_output: "A Markdown-formatted Jira report containing key issue summaries, dependency analysis, task assignments, and sprint insights, all aligned with {user_query}"

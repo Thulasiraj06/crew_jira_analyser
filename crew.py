@@ -19,9 +19,10 @@ class JiraAPITool(BaseTool):
         )
     
     def _run(self, query: str) -> str:
-        """Run the Jira API tool with the given query"""
+        """Run the Jira API tool with the given query.
+           Assumes the query is a JQL query.
+        """
         try:
-            # Assume the query is a JQL query
             issues = self.jira.search_issues(query, maxResults=100)
             results = []
             for issue in issues:
@@ -114,7 +115,7 @@ class JiraManagementCrew:
         return Task(
             config=self.tasks_config["fetch_jira_issues_task"],
             agent=self.jira_issue_fetcher_agent(),
-            tool=JiraAPITool()  # Integrates the custom Jira API tool
+            tool=JiraAPITool()  # Use the custom Jira API tool for fetching issues
         )
 
     @task

@@ -37,7 +37,7 @@ def replay():
 
 def test():
     """
-    Test the crew execution and returns the results.
+    Test the crew execution and return the results.
     """
     inputs = {"user_query": "Find and analyze critical bugs in the authentication module"}
     try:

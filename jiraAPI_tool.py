@@ -12,6 +12,7 @@ class JiraAPITool(BaseTool):
     def __init__(self):
         super().__init__()
         # Initialize Jira client
+        print(os.environ.get('JIRA_SERVER'))
         self.jira = JIRA(
             server=os.environ.get('JIRA_SERVER'),
             basic_auth=(os.environ.get('JIRA_USERNAME'), os.environ.get('JIRA_API_TOKEN'))

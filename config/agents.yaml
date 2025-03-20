@@ -1,4 +1,3 @@
-# agents.yaml - correct format
 jira_issue_fetcher_agent:
   role: "Jira Issue Fetcher"
   goal: "Retrieve Jira issues based on user-defined queries and specific criteria."
