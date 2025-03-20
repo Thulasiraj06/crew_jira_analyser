@@ -1,0 +1,32 @@
+# tasks.yaml
+fetch_jira_issues_task:
+  description: "Fetch Jira issues based on specified criteria and the user's query {user_query}. Use the Jira API to retrieve the data, ensuring that the results are filtered, prioritized, and structured to provide relevant insights."
+  expected_output: "A JSON object containing the fetched Jira issues, organized and prioritized based on {user_query}."
+
+analyze_jira_issues_task:
+  description: "Analyze the fetched Jira issues to identify patterns, trends, and key insights. Detect potential risks, recurring issues, and any bottlenecks affecting resolution. Ensure that {user_query} is explicitly addressed in the analysis."
+  expected_output: "A Markdown-formatted summary of the Jira issues, highlighting key findings, issue trends, and actionable insights tailored to {user_query}."
+
+identify_jira_dependencies_task:
+  description: "Identify and map dependencies among Jira issues. Detect blockers that may be preventing progress and determine the relationships between tasks. Ensure that dependencies affecting {user_query} are prioritized."
+  expected_output: "A JSON object mapping Jira issues, showing dependencies and blockers, with recommendations for resolution."
+
+assign_jira_issues_task:
+  description: "Automatically assign Jira issues to the most relevant team members based on their expertise, workload, and issue priority. Ensure that assignments optimize efficiency and align with {user_query}."
+  expected_output: "A JSON object listing Jira issues, their assigned team members, and reasoning for each assignment based on {user_query}."
+
+escalate_jira_issues_task:
+  description: "Identify high-priority or unresolved Jira issues that require urgent action. If an issue matches {user_query} and meets escalation criteria, notify the appropriate teams or stakeholders for immediate intervention."
+  expected_output: "A JSON confirmation of the escalated issues, including affected teams and urgency levels, ensuring alignment with {user_query}."
+
+refine_jira_backlog_task:
+  description: "Refine and optimize the Jira backlog by updating issue descriptions, re-prioritizing tasks, and ensuring clarity in objectives. Ensure backlog improvements align with {user_query}."
+  expected_output: "A JSON response detailing refined backlog priorities, updated task descriptions, and structural improvements based on {user_query}."
+
+optimize_jira_sprint_task:
+  description: "Optimize sprint planning by prioritizing Jira issues that are urgent, critical, or related to {user_query}. Adjust sprint schedules and resource allocation for maximum efficiency."
+  expected_output: "A JSON summary of the revised sprint plan, indicating adjustments made based on {user_query}."
+
+generate_jira_report_task:
+  description: "Generate a structured and comprehensive report summarizing Jira issues, dependencies, task assignments, and sprint updates. Ensure the report is tailored to {user_query}, providing actionable insights and recommendations."
+  expected_output: "A Markdown-formatted Jira report containing key issue summaries, dependency analysis, task assignments, and sprint insights, all aligned with {user_query}."
